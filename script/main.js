@@ -195,6 +195,7 @@ $(function(){
             //active 클래스 부여
             $(this).addClass('active');
             mobileNavThumbs.slideTo($(".wholeMenu .mobileNav .active").parent().index());	
+
         });
         $('.wholeMenu .wm').on('scroll',function(){
             findPosition();
