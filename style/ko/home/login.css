@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* New login Form 2023 - 09 - 21 */
+.loginform .logMidW .msg {width: 100%; margin-bottom: 10px;} 
+.totalLogin { width: 100%; box-sizing: border-box; display: flex; min-height: calc(100vh - 335px); justify-content: center; padding: 30px 0; align-items: center;}
+@media screen and (max-width: 768px) {
+    .totalLogin {min-height: calc(100vh - 591px);padding-top: 0;}
+}
+
+.loginform {width: 100%; display: flex; position: relative; justify-content: center; padding-bottom: 20px; box-sizing: border-box; background-color:#fff; border: 1px solid #e5e5e5; box-shadow: 6px 5px 9.1px 0.9px rgba(0, 0, 0, 0.1); padding:80px 30px 52px; border-radius: 5px;}
+.loginform .loginType1{width: 515px; margin-right: 70px; position: relative;}
+.loginform .loginType2{width: 515px; margin-left: 70px;}
+.loginform .loginType1::before{content: ""; display: block; width: 1px; height: 100%; background: #e7e7e7; position: absolute; right: -70px;}
+@media screen and (max-width: 1310px) {
+    .loginform .loginType1{margin-right: 30px;}
+    .loginform .loginType2{margin-left: 30px;}
+    .loginform .loginType1::before{right: -30px;}
+}
+@media screen and (max-width: 1024px) {
+    .loginform{display: block;}
+    .loginform .loginType1{width: 100%; margin-right: 0px;}
+    .loginform .loginType2{width: 100%; margin-left: 0px;}
+    .loginform .loginType1::before{display: none;}
+}
+@media screen and (max-width: 768px) {
+    .loginform {padding: 50px 15px;}
+}
+.loginform h2 {padding-bottom: 15px;}
+
+.loginform .logTopW{background: url('../../../image/ko/solution/common/loginbg.png') no-repeat left center;padding: 50px  0 20px 95px;margin-bottom: 22px;box-sizing: border-box;border-bottom: 1px solid #e7e7e7;}
+.loginform .logTopW > span {display: block;font-size: 35px;line-height: 1;font-family: PretendardM;color: #1e68ae;margin-bottom: 15px;}
+.loginform .logTopW > div.scrip p {font-size: 17px;color: #555555;line-height: 1;margin-bottom: 5px;font-family: PretendardM;}
+.loginform .logTopW > div.scrip p > span {color: #1e68ae;font-family: PretendardSB;}
+.loginform .loginCheckW {display: flex;justify-content: center;gap: 40px;padding: 0 0 22px;box-sizing: border-box;}
+.loginform .loginCheckW > div {display: flex;align-items: center;}
+.loginform .loginCheckW > div input{position: absolute;cursor: pointer;width: 21px;height: 21px;opacity: 0;font-size: 0;}
+.loginform .loginCheckW > div input[type="radio"]:checked + label:before {background-image: url('../../../image/ko/solution/common/loginbtnOn.png');}
+.loginform .loginCheckW > div label{position: relative;padding-left: 30px;cursor: pointer;font-size: 18px;color: #6f6f71;font-family: PretendardM;}
+.loginform .loginCheckW > div label:before {content: '';position: absolute;top: 0;left: 0;width: 21px;height: 21px;background: url('../../../image/ko/solution/common/loginbtn.png') no-repeat center/cover;}
+.loginform .loginCheckW > div label.webLogin:before {background-image: url('../../../image/ko/solution/common/loginbtnOn.png');}
+
+.loginform .logMidW {display: flex;position: relative;}
+
+.loginform .idpwCon{width: calc(100% - 120px);}
+.loginform .idpwCon > div.logForm{width: 100%;height: 50px;}
+.loginform .idpwCon > div.logForm:first-child {margin-bottom: 10px;}
+.loginform .idpwCon > div.logForm input {width: 100%;height: 100%;background: #f1f1f1;padding-left: 20px;box-sizing: border-box;border: 0;border-radius: 5px;}
+.loginform .idpwCon > div.logForm input[type="text"]{color: #000000;font-size: 16px;font-family: PretendardM;}
+.loginform .idpwCon > div.logForm input::placeholder {color: #000000;font-size: 16px;font-family: PretendardM;}
+
+.loginform .loginEnter {width: 110px;height: 110px;margin-left: 10px;}
+.loginform .loginEnter button{width: 100%;height: 100%;cursor: pointer;background: #0d326f;color: #ffffff;text-align: center;font-size: 18px;font-family: PretendardM;border: 0;border-radius: 5px;}
+
+.loginform .logBtmW {display: flex;justify-content: space-between;align-items: center;padding: 17px 0;box-sizing: border-box;border-bottom: 1px solid #e7e7e7;margin-bottom: 28px;}
+.loginform .logBtmW > .idSaveW input{position: absolute;cursor: pointer;z-index: 2;opacity: 0;width: 21px;height: 21px;}
+.loginform .logBtmW > .idSaveW input[type="checkbox"]:checked + label:before {background-image: url('../../../image/ko/solution/common/idcheckIconOn.png');}
+.loginform .logBtmW > .idSaveW label{position: relative;cursor: pointer;padding-left: 30px;font-size: 15px;color: #000000;font-family: PretendardM;}
+.loginform .logBtmW > .idSaveW label:before{content: '';position: absolute;top: -2px;left: 0;width: 21px;height: 21px;background: url('../../../image/ko/solution/common/idcheckIcon.png') no-repeat center/cover;}
+.loginform .logBtmW > .lostW a{font-size: 15px;color: #000000;font-family: PretendardM;}
+
+.loginform .loginScrip {padding: 20px 15px;border: 1px solid #dcdcdc;box-sizing: border-box;margin-top: 20px;border-radius: 5px;}
+.loginform .loginScrip > p{position: relative;font-size: 15px;color: #555555;font-family: PretendardM;padding-left: 12px;margin-bottom: 10px;}
+.loginform .loginScrip > p:before {content: '';position: absolute;top: 6px;left: 0;width: 4px;height: 4px;border-radius: 4px;background: #0059a9;}
+
+.loginform .loginScrip > ul {padding-left: 13px;}
+
+.loginform .loginScrip > ul > li {font-size: 15px;color: #555555;font-family: PretendardM;position: relative;padding-left: 10px;}
+.loginform .loginScrip > ul > li::before{content: ""; display: block; width: 4px; height: 1px; background: #555; position: absolute; left: 0; top: 8px;}
+.loginform .loginScrip > ul > li:not(:last-child) {margin-bottom: 3px;}
+
+.loginform .loginScrip > ul > li:last-child {color: #0068d4;}
+.loginform .loginScrip > ul > li a {color: #0068d4;text-decoration: underline;}
+@media screen and (max-width: 1024px) {
+    .loginform .logTopW{background: none; padding: 0  0 20px 0; margin-bottom: 22px; box-sizing: border-box;border-bottom: 1px solid #e7e7e7; text-align: center;}
+    .loginform .logTopW::before{content: ""; display: inline-block; width: 65px; height: 65px; background: url('../../../image/ko/solution/common/loginbg.png') no-repeat left bottom/contain; margin-right: 10px; vertical-align: bottom;}
+    .loginform .logTopW > div.scrip{display: inline-block; text-align: left; margin-top: 15px;}
+}
+@media screen and (max-width: 768px) {
+    .loginform .idpwCon{width: calc(100% - 104px);}
+    .loginform .idpwCon > div.logForm{height: 42px;}
+    .loginform .loginEnter {width: 94px;height: 94px;margin-left: 10px;}
+}
+@media screen and (max-width: 480px) {
+    .loginform {width: 100%;box-sizing: border-box;}
+    .loginform h2 img {width: 100%;}
+
+    .loginform .logTopW > div.scrip p {font-size: 15px;}
+
+    .loginform .loginCheckW {gap: 20px;}
+    .loginform .loginCheckW > div label {font-size: 17px;}
+}
+
+.loginSns h4{text-align: center; font-family: NotoSansB, sans-serif; font-size: 25px; color: #2a2a2a; margin: 50px 0 25px;}
+.loginSns ul{display: -webkit-box; display: -ms-flexbox; display:flex; -webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap:wrap; margin-left: -16px;}
+.loginSns li{width: 50%;}
+.loginSns li a {display:block; border-radius:2px; width: calc(100% - 16px); height:53px; line-height:53px; color:#fff; font-family:NotoSansM,sans-serif; background-repeat:no-repeat; background-position:left 19px center; text-indent:60px; margin:8px 0 8px 16px;}
+.loginSns li a.accountN {background-color:#34b733; background-image:url(../../../image/ko/solution/common/login_sns_n.png)}
+.loginSns li a.accountG {background-color:#cc3731; background-image:url(../../../image/ko/solution/common/login_sns_g.png)}
+.loginSns li a.accountK {background-color:#fed325; background-image:url(../../../image/ko/solution/common/login_sns_k.png)}
+.loginSns li a.accountF {background-color:#3b589c; background-image:url(../../../image/ko/solution/common/login_sns_f.png)}
+@media screen and (max-width: 1024px) {
+    .loginSns ul{margin-left: -10px;}
+    .loginSns li{width: 33%;}
+    .loginSns li a {width:calc(100% - 7px); margin: 5px 0 5px 10px;}
+}
+@media screen and (max-width: 768px) {
+    .loginSns h4{font-size: 22px; margin-bottom: 20px;}
+    .loginSns ul{justify-content: center;}
+    .loginSns li{width:100%;}
+    .loginSns li a{width: 230px; margin: 5px auto;}
+}

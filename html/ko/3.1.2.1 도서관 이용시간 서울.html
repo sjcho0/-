@@ -1,0 +1,943 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>경희대학교 중앙도서관</title>
+
+    <link rel="stylesheet" href="../../style/ui/fullpage/fullpage.css">
+    <link rel="stylesheet" href="../../style/ui/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="../../style/ui/slick/slick.css">
+    <script src="../../script/ui/jquery-3.6.2.min.js"></script>
+    <script src="../../script/ui/jquery.easing.1.3.js"></script>
+    <script src="../../script/ui/fullpage/fullpage.js"></script>
+    <script src="../../script/ui/swiper/swiper-bundle.js"></script>
+    <script src="../../script/ui/slick/slick.js"></script>
+
+    <link rel="stylesheet" href="../../style/ko/standard/common.css">
+    <link rel="stylesheet" href="../../style/ko/theme/sub.css">
+    <link rel="stylesheet" href="../../style/ko/home/guide.css">
+
+    <script src="../../script/sub.js"></script>
+
+</head>
+<body>
+    <div id="divAccessibility">
+        <ul>
+            <li><a href="#divTopMenu">메뉴 바로가기</a></li>
+            <li><a href="#divContents">본문 바로가기(skip to content)</a></li>
+            <li><a href="#divSearch">검색 바로가기</a></li>
+            <li><a href="#divFooter">도서관정보 바로가기</a></li>
+        </ul>
+    </div>
+    <div id="divWrapper">
+        <header id="divHeader">
+            <div class="header1">
+                <div class="inner">
+                    <h1 class="logo"><a href="#" title="경희대학교 중앙도서관"><img class="whiteLogo" src="../../image/ko/local/logo.png"><img class="colorLogo" src="../../image/ko/local/logo_c.png"></a></h1>
+                    <div id="divTopMenu">
+                        <ul>
+                            <li class="topmenu1">
+                                <a href="#" title="자료이용"><span>자료이용</span></a>
+                                <div class="depth2W">
+                                    <div>
+                                        <div class="depth2Info">
+                                            <div>
+                                                <h4>자료이용</h4>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#" title="Search">Search</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="통합검색"><span>통합검색</span></a></li>
+                                                    <li><a href="#" title="소장자료"><span>소장자료</span></a></li>
+                                                    <li><a href="#" title="전자자료"><span>전자자료</span></a></li>
+                                                    <li><a href="#" title="전자자료통합검색(EDS)"><span>전자자료통합검색(EDS)</span></a></li>
+                                                    <li><a href="#" title="전자자료 교외접속/공정이용"><span>전자자료 교외접속/공정이용</span></a></li>
+                                                    <li><a href="#" title="외부기관 자료검색(API)"><span>외부기관 자료검색(API)</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Browse">Browse</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="데이터베이스"><span>데이터베이스</span></a></li>
+                                                    <li><a href="#" title="전자저널"><span>전자저널</span></a></li>
+                                                    <li><a href="#" title="전자책"><span>전자책</span></a></li>
+                                                    <li><a href="#" title="학위논문"><span>학위논문</span></a></li>
+                                                    <li><a href="#" title="동영상강의"><span>동영상강의</span></a></li>
+                                                    <li><a href="#" title="비도서자료"><span>비도서자료</span></a></li>
+                                                    <li><a href="#" title="고서"><span>고서</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="컬렉션">컬렉션</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="경희 컬렉션"><span>경희 컬렉션</span></a></li>
+                                                    <li><a href="#" title="주제 컬렉션"><span>주제 컬렉션</span></a></li>
+                                                    <li><a href="#" title="자료 기증자 컬렉션"><span>자료 기증자 컬렉션</span></a></li>
+                                                    <li><a href="#" title="기타 컬렉션"><span>기타 컬렉션</span></a></li>
+                                                    <li><a href="#" title="신착도서"><span>신착도서</span></a></li>
+                                                    <li><a href="#" title="인기도서"><span>인기도서</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="신청/예약">신청/예약</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="대출반납"><span>대출반납</span></a></li>
+                                                    <li><a href="#" title="도서 예약/우선정리"><span>도서 예약/우선정리</span></a></li>
+                                                    <li><a href="#" title="보존서고 자료 신청"><span>보존서고 자료 신청</span></a></li>
+                                                    <li><a href="#" title="자료구입 신청"><span>자료구입 신청</span></a></li>
+                                                    <li><a href="#" title="타기관 자료 대출 신청"><span>타기관 자료 대출 신청</span></a></li>
+                                                    <li><a href="#" title="타기관 자료 복사 신청"><span>타기관 자료 복사 신청</span></a></li>
+                                                    <li><a href="#" title="타도서관 방문/열람 신청"><span>타도서관 방문/열람 신청</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="topmenu2">
+                                <a href="#" title="연구학습지원"><span>연구학습지원</span></a>
+                                <div class="depth2W">
+                                    <div>
+                                        <div class="depth2Info">
+                                            <div>
+                                                <h4>연구학습지원</h4>
+                                                <p>교직원의 연구 및 강의와 학생들의 학습 및 연구를 지원하기 위해 중앙도서관에서는 다양한 교육과 학과 주제별 가이드, 연구 툴을 제공하고 있습니다.</p>
+                                            </div>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#" title="강의지원">강의지원</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학과별 가이드"><span>학과별 가이드</span></a></li>
+                                                    <li><a href="#" title="과제도서"><span>과제도서</span></a></li>
+                                                    <li><a href="#" title="과제도서 신청"><span>과제도서 신청</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="정보 탐색 및 수집">정보 탐색 및 수집</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학술정보 탐색"><span>학술정보 탐색</span></a></li>
+                                                    <li><a href="#" title="학술정보 교육"><span>학술정보 교육</span></a></li>
+                                                    <li><a href="#" title="연구컨설팅 및 맞춤교육"><span>연구컨설팅 및 맞춤교육</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="논문작성 및 출판지원">논문작성 및 출판지원</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학문적글쓰기"><span>학문적글쓰기</span></a></li>
+                                                    <li><a href="#" title="참고문헌작성"><span>참고문헌작성</span></a></li>
+                                                    <li><a href="#" title="연구윤리 및 저작권"><span>연구윤리 및 저작권</span></a></li>
+                                                    <li><a href="#" title="논문유사도 검사"><span>논문유사도 검사</span></a></li>
+                                                    <li><a href="#" title="OA 출판"><span>OA 출판</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="디지털 리포지터리">디지털 리포지터리</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학위논문 제출"><span>학위논문 제출</span></a></li>
+                                                    <li><a href="#" title="교내 간행물"><span>교내 간행물</span></a></li>       
+                                                    <li><a href="#" title="자료 디지털 보존"><span>자료 디지털 보존</span></a></li>                                            
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="연구성과 분석 및 확산">연구성과 분석 및 확산</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="연구동향분석"><span>연구동향분석</span></a></li>
+                                                    <li><a href="#" title="학술지 분석"><span>학술지 분석</span></a></li>       
+                                                    <li><a href="#" title="연구 영향력"><span>연구 영향력</span></a></li>      
+                                                    <li><a href="#" title="연구성과분석"><span>연구성과분석</span></a></li>                                      
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Research Guides">Research Guides</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="자료 유형별 가이드"><span>자료 유형별 가이드</span></a></li>
+                                                    <li><a href="#" title="주제/학과별 가이드"><span>주제/학과별 가이드</span></a></li>
+                                                    <li><a href="#" title="참고문헌 스타일 가이드"><span>참고문헌 스타일 가이드</span></a></li>     
+                                                    <li><a href="#" title="도서관 서비스별 가이드"><span>도서관 서비스별 가이드</span></a></li>
+                                                    <li><a href="#" title="기타 토픽 가이드"><span>기타 토픽 가이드</span></a></li>                                
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="topmenu3">
+                                <a href="#" title="시설이용"><span>시설이용</span></a>
+                                <div class="depth2W">
+                                    <div>
+                                        <div class="depth2Info">
+                                            <div>
+                                                <h4>시설이용</h4>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#" title="시설이용">시설이용</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="출입/ID카드/모바일 이용증"><span>출입/ID카드/모바일 이용증</span></a></li>
+                                                    <li><a href="#" title="도서관 이용시간"><span>도서관 이용시간</span></a></li>
+                                                    <li><a href="#" title="층별시설안내"><span>층별시설안내</span></a></li>
+                                                    <li><a href="#" title="유/무선 인터넷 이용"><span>유/무선 인터넷 이용</span></a></li>
+                                                    <li><a href="#" title="복사/인쇄/스캔/PC"><span>복사/인쇄/스캔/PC</span></a></li>
+                                                    <li><a href="#" title="소프트웨어/장비 이용"><span>소프트웨어/장비 이용</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="좌석 및 Room 예약">좌석 및 Room 예약</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="이용안내"><span>이용안내</span></a></li>
+                                                    <li><a href="#" title="좌석 및 Room 예약 현황"><span>좌석 및 Room 예약 현황</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="신청/예약">신청/예약</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="휴학생 이용신청"><span>휴학생 이용신청</span></a></li>
+                                                    <li><a href="#" title="졸업생 이용신청"><span>졸업생 이용신청</span></a></li>
+                                                    <li><a href="#" title="경희구성원 이용신청"><span>경희구성원 이용신청</span></a></li>
+                                                    <li><a href="#" title="지역주민 등 이용신청"><span>지역주민 등 이용신청</span></a></li>
+                                                    <li><a href="#" title="도서관 견학신청"><span>도서관 견학신청</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="topmenu4">
+                                <a href="#" title="도서관 안내"><span>도서관 안내</span></a>
+                                <div class="depth2W">
+                                    <div>
+                                        <div class="depth2Info">
+                                            <div>
+                                                <h4>도서관 안내</h4>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#" title="도서관 소식">도서관 소식</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="공지사항"><span>공지사항</span></a></li>
+                                                    <li><a href="#" title="도서관 일정"><span>도서관 일정</span></a></li>
+                                                    <li><a href="#" title="뉴스레터"><span>뉴스레터</span></a></li>
+                                                    <li><a href="#" title="문화프로그램 안내"><span>문화프로그램 안내</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="도서관 소개">도서관 소개</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="소개/비전/연혁"><span>소개/비전/연혁</span></a></li>
+                                                    <li><a href="#" title="조직 및 연락처"><span>조직 및 연락처</span></a></li>
+                                                    <li><a href="#" title="도서관 규정"><span>도서관 규정</span></a></li>
+                                                    <li><a href="#" title="도서관 성과"><span>도서관 성과</span></a></li>
+                                                    <li><a href="#" title="Online Tour"><span>Online Tour</span></a></li>
+                                                    <li><a href="#" title="중앙도서관 및 분관 안내"><span>중앙도서관 및 분관 안내</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="이용문의">이용문의</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="FAQ"><span>FAQ</span></a></li>
+                                                    <li><a href="#" title="Q&A"><span>Q&A</span></a></li>
+                                                    <li><a href="#" title="서비스별 연락처"><span>서비스별 연락처</span></a></li>
+                                                    <li><a href="#" title="분실물/습득물 찾기"><span>분실물/습득물 찾기</span></a></li>
+                                                    <li><a href="#" title="자료실"><span>자료실</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="이용자 그룹별 안내">이용자 그룹별 안내</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학부생"><span>학부생</span></a></li>
+                                                    <li><a href="#" title="대학원생"><span>대학원생</span></a></li>
+                                                    <li><a href="#" title="졸업생/수료생"><span>졸업생/수료생</span></a></li>
+                                                    <li><a href="#" title="사이버대 이용자"><span>사이버대 이용자</span></a></li>
+                                                    <li><a href="#" title="외부인"><span>외부인</span></a></li>
+                                                    <li><a href="#" title="장애인 서비스"><span>장애인 서비스</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="기증/기부">기증/기부</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="자료 기증 프로그램"><span>기증안내</span></a></li>
+                                                    <li><a href="#" title="기부 프로그램"><span>기증자료</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="topmenu5">
+                                <a href="#" title="My Library"><span>My Library</span></a>
+                                <div class="depth2W">
+                                    <div>
+                                        <div class="depth2Info">
+                                            <div>
+                                                <h4>My Library</h4>
+                                                <p>마이페이지입니다.</p>
+                                            </div>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#" title="My 정보">My 정보</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="My 개인정보"><span>My 개인정보</span></a></li>
+                                                    <li><a href="#" title="My 서재"><span>My 서재</span></a></li>
+                                                    <li><a href="#" title="My 서평"><span>My 서평</span></a></li>
+                                                    <li><a href="#" title="My 검색어"><span>My 검색어</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="My 자료">My 자료</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="자료대출 현황"><span>자료대출 현황</span></a></li>
+                                                    <li><a href="#" title="자료예약 현황"><span>자료예약 현황</span></a></li>
+                                                    <li><a href="#" title="자료구입 신청 현황"><span>자료구입 신청 현황</span></a></li>
+                                                    <li><a href="#" title="서가에 없는 도서 찾기 현황"><span>서가에 없는 도서 찾기 현황</span></a></li>
+                                                    <li><a href="#" title="타기관 자료 대출 신청/현황"><span>타기관 자료 대출 신청/현황</span></a></li>
+                                                    <li><a href="#" title="타기관 자료 복사 신청/현황"><span>타기관 자료 복사 신청/현황</span></a></li>
+                                                    <li><a href="#" title="서비스 요금 온라인 결제"><span>서비스 요금 온라인 결제</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="My AI 및 빅데이터">My AI 및 빅데이터</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="내독서취향"><span>이용교육 신청현황</span></a></li>
+                                                    <li><a href="#" title="독서통계"><span>연구지원서비스 신청현황</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="My 공간">My 공간</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="열람실 좌석 이용"><span>열람실 좌석 이용</span></a></li>
+                                                    <li><a href="#" title="스터디룸/세미나룸 이용"><span>스터디룸/세미나룸 이용</span></a></li>
+                                                    <li><a href="#" title="기타 공간 이용"><span>기타 공간 이용</span></a></li>
+                                                    <li><a href="#" title="타기관 방문/열람 신청/현황"><span>타기관 방문/열람 신청/현황</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="기타">기타</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#" title="학술정보교육 신청 현황"><span>학술정보교육 신청 현황</span></a></li>
+                                                    <li><a href="#" title="전화/이메일 문의 신청 현황"><span>전화/이메일 문의 신청 현황</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="divGlobalMenu">
+                        <ul>
+                            <li class="myInfo">
+                                <a href="#" title="">
+                                    <img class="whiteImg" src="../../image/ko/local/myInfo.png">
+                                    <img class="colorImg" src="../../image/ko/local/myInfo_c.png">
+                                </a>
+                                <div class="myInfoW">
+                                    <div class="myInfoTop">
+                                        <p class="userName"><a class="name" href="#">퓨쳐누리님</a>WELCOME!</p>
+                                        <ul class="limitInfo">
+                                            <li><span>예약제재기간 :</span> <span id="reserveDate">제재 대상이 아닙니다.</span></li>
+                                            <li><span>대출 제재기간 :</span> <span id="loanDate">제재 대상이 아닙니다.</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="myInfoCont">
+                                        <ul class="myInfoList">
+                                            <li>
+                                                <p class="infoTit"><img src="../../image/ko/local/myInfo_icon1.png"><a href="/myloan/list" title="대출현황">대출현황</a> </p>
+                                                <div class="myinfoData">
+                                                    <span><a href="#" title=""><span class="point1">3</span>권 대출중</a></span>/
+                                                    <span><a href="#" title=""><span class="point2">1</span>권 연체중</a></span>/
+                                                    <span><a href="#" title=""><span class="point3">0</span>권 예약중</a></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="infoTit"><img src="../../image/ko/local/myInfo_icon2.png"> <a href="#" title="">희망도서 신청</a></p>
+                                                <div class="myinfoData">
+                                                    <span><a href="#" title=""><span class="point1">3</span>권 처리중</a></span>/
+                                                    <span><a href="#" title=""><span class="point2">1</span>권 도착</a></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="infoTit"><img src="../../image/ko/local/myInfo_icon3.png"> <a href="#" title="">원문복사 신청</a></p>
+                                                <div class="myinfoData">
+                                                    <span><a href="#" title=""><span class="point1">3</span>권 처리중</a></span>/
+                                                    <span><a href="#" title=""><span class="point2">1</span>권 도착</a></span>
+                                                </div class="myinfoData">
+                                            </li>
+                                            <li>
+                                                <p class="infoTit"><img src="../../image/ko/local/myInfo_icon4.png"> <a href="#" title="">상호대차 신청</a></p>
+                                                <div class="myinfoData">
+                                                    <span><a href="#" title=""><span class="point1">3</span>권 처리중</a></span>/
+                                                    <span><a href="#" title=""><span class="point2">1</span>권 도착</a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="closeBtn" href="#" title=""><img src="../../image/ko/local/myInfoClose.png"></a>
+                                </div>
+                            </li>
+                            <li class="login">
+                                <!-- <a href="#" title="">로그인</a> -->
+                                <a href="#" title="">로그아웃</a>
+                            </li>
+                            <li class="lang"><a href="#" title="">ENG</a></li>
+                        </ul>
+                    </div>
+                    <a class="wholeMenuBtn" href="#" title="전체메뉴"><img class="whiteImg" src="../../image/ko/local/wholeMenuBtn_white.png"><img class="colorImg" src="../../image/ko/local/wholeMenuBtn.png"></a>
+                </div>
+            </div>
+            <div class="wholeMenu">
+                <div>
+                    <div class="wmTop">
+                        <div class="wmLogo"><img src="../../image/ko/local/logo.png"></div>
+                    </div>
+                    <div class="mobileTop">
+                        <div class="mTop1">
+                            <ul class="mobileMenu">
+                                <li class="myInfo"><a href="#" title=""><img src="../../image/ko/local/myInfo.png"></a></li>
+                                <li class="lang"><a href="#" title=""><img src="../../image/ko/local/lang.png">ENG</a></li>
+                            </ul>
+                        </div>
+                        <div class="mTop2">
+                            <p class="userName"><span class="name">퓨쳐누리</span>님</p>
+                            <div class="logInOut"><a href="#" title="로그아웃">로그아웃</a></div>
+                        </div>
+                    </div>
+                    <div class="mobileNav">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide mn"><a data-scroll="wmItem1" href="#wmItem1" title="">자료이용</a></li>
+                            <li class="swiper-slide mn"><a data-scroll="wmItem2" href="#wmItem2" title="">연구학습지원</a></li>
+                            <li class="swiper-slide mn"><a data-scroll="wmItem3" href="#wmItem3" title="">시설이용</a></li>
+                            <li class="swiper-slide mn"><a data-scroll="wmItem4" href="#wmItem4" title="">도서관 안내</a></li>
+                            <li class="swiper-slide mn"><a data-scroll="wmItem5" href="#wmItem5" title="">My Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="wm">
+                        <ul>
+                            <li id="wmItem1"> 
+                                <a href="#" title="자료이용">자료이용</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" title="Search">Search</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="통합검색"><span>통합검색</span></a></li>
+                                            <li><a href="#" title="소장자료"><span>소장자료</span></a></li>
+                                            <li><a href="#" title="전자자료"><span>전자자료</span></a></li>
+                                            <li><a href="#" title="전자자료통합검색(EDS)"><span>전자자료통합검색(EDS)</span></a></li>
+                                            <li><a href="#" title="전자자료 교외접속/공정이용"><span>전자자료 교외접속/공정이용</span></a></li>
+                                            <li><a href="#" title="외부기관 자료검색(API)"><span>외부기관 자료검색(API)</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Browse">Browse</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="데이터베이스"><span>데이터베이스</span></a></li>
+                                            <li><a href="#" title="전자저널"><span>전자저널</span></a></li>
+                                            <li><a href="#" title="전자책"><span>전자책</span></a></li>
+                                            <li><a href="#" title="학위논문"><span>학위논문</span></a></li>
+                                            <li><a href="#" title="동영상강의"><span>동영상강의</span></a></li>
+                                            <li><a href="#" title="비도서자료"><span>비도서자료</span></a></li>
+                                            <li><a href="#" title="고서"><span>고서</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="컬렉션">컬렉션</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="경희 컬렉션"><span>경희 컬렉션</span></a></li>
+                                            <li><a href="#" title="주제 컬렉션"><span>주제 컬렉션</span></a></li>
+                                            <li><a href="#" title="자료 기증자 컬렉션"><span>자료 기증자 컬렉션</span></a></li>
+                                            <li><a href="#" title="기타 컬렉션"><span>기타 컬렉션</span></a></li>
+                                            <li><a href="#" title="신착도서"><span>신착도서</span></a></li>
+                                            <li><a href="#" title="인기도서"><span>인기도서</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="신청/예약">신청/예약</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="대출반납"><span>대출반납</span></a></li>
+                                            <li><a href="#" title="도서 예약/우선정리"><span>도서 예약/우선정리</span></a></li>
+                                            <li><a href="#" title="보존서고 자료 신청"><span>보존서고 자료 신청</span></a></li>
+                                            <li><a href="#" title="자료구입 신청"><span>자료구입 신청</span></a></li>
+                                            <li><a href="#" title="타기관 자료 대출 신청"><span>타기관 자료 대출 신청</span></a></li>
+                                            <li><a href="#" title="타기관 자료 복사 신청"><span>타기관 자료 복사 신청</span></a></li>
+                                            <li><a href="#" title="타도서관 방문/열람 신청"><span>타도서관 방문/열람 신청</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="wmItem2">
+                                <a href="#" title="연구학습지원">연구학습지원</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" title="강의지원">강의지원</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학과별 가이드"><span>학과별 가이드</span></a></li>
+                                            <li><a href="#" title="과제도서"><span>과제도서</span></a></li>
+                                            <li><a href="#" title="과제도서 신청"><span>과제도서 신청</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="정보 탐색 및 수집">정보 탐색 및 수집</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학술정보 탐색"><span>학술정보 탐색</span></a></li>
+                                            <li><a href="#" title="학술정보 교육"><span>학술정보 교육</span></a></li>
+                                            <li><a href="#" title="연구컨설팅 및 맞춤교육"><span>연구컨설팅 및 맞춤교육</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="논문작성 및 출판지원">논문작성 및 출판지원</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학문적글쓰기"><span>학문적글쓰기</span></a></li>
+                                            <li><a href="#" title="참고문헌작성"><span>참고문헌작성</span></a></li>
+                                            <li><a href="#" title="연구윤리 및 저작권"><span>연구윤리 및 저작권</span></a></li>
+                                            <li><a href="#" title="논문유사도 검사"><span>논문유사도 검사</span></a></li>
+                                            <li><a href="#" title="OA 출판"><span>OA 출판</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="디지털 리포지터리">디지털 리포지터리</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학위논문 제출"><span>학위논문 제출</span></a></li>
+                                            <li><a href="#" title="교내 간행물"><span>교내 간행물</span></a></li>       
+                                            <li><a href="#" title="자료 디지털 보존"><span>자료 디지털 보존</span></a></li>                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="연구성과 분석 및 확산">연구성과 분석 및 확산</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="연구동향분석"><span>연구동향분석</span></a></li>
+                                            <li><a href="#" title="학술지 분석"><span>학술지 분석</span></a></li>       
+                                            <li><a href="#" title="연구 영향력"><span>연구 영향력</span></a></li>      
+                                            <li><a href="#" title="연구성과분석"><span>연구성과분석</span></a></li>                                      
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Research Guides">Research Guides</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="자료 유형별 가이드"><span>자료 유형별 가이드</span></a></li>
+                                            <li><a href="#" title="주제/학과별 가이드"><span>주제/학과별 가이드</span></a></li>
+                                            <li><a href="#" title="참고문헌 스타일 가이드"><span>참고문헌 스타일 가이드</span></a></li>     
+                                            <li><a href="#" title="도서관 서비스별 가이드"><span>도서관 서비스별 가이드</span></a></li>
+                                            <li><a href="#" title="기타 토픽 가이드"><span>기타 토픽 가이드</span></a></li>                                
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="wmItem3">
+                                <a href="#" title="시설이용">시설이용</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" title="시설이용">시설이용</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="출입/ID카드/모바일 이용증"><span>출입/ID카드/모바일 이용증</span></a></li>
+                                            <li><a href="#" title="도서관 이용시간"><span>도서관 이용시간</span></a></li>
+                                            <li><a href="#" title="층별시설안내"><span>층별시설안내</span></a></li>
+                                            <li><a href="#" title="유/무선 인터넷 이용"><span>유/무선 인터넷 이용</span></a></li>
+                                            <li><a href="#" title="복사/인쇄/스캔/PC"><span>복사/인쇄/스캔/PC</span></a></li>
+                                            <li><a href="#" title="소프트웨어/장비 이용"><span>소프트웨어/장비 이용</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="좌석 및 Room 예약">좌석 및 Room 예약</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="이용안내"><span>이용안내</span></a></li>
+                                            <li><a href="#" title="좌석 및 Room 예약 현황"><span>좌석 및 Room 예약 현황</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="신청/예약">신청/예약</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="휴학생 이용신청"><span>휴학생 이용신청</span></a></li>
+                                            <li><a href="#" title="졸업생 이용신청"><span>졸업생 이용신청</span></a></li>
+                                            <li><a href="#" title="경희구성원 이용신청"><span>경희구성원 이용신청</span></a></li>
+                                            <li><a href="#" title="지역주민 등 이용신청"><span>지역주민 등 이용신청</span></a></li>
+                                            <li><a href="#" title="도서관 견학신청"><span>도서관 견학신청</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="wmItem4">
+                                <a href="#" title="도서관 안내">도서관 안내</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" title="도서관 소식">도서관 소식</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="공지사항"><span>공지사항</span></a></li>
+                                            <li><a href="#" title="도서관 일정"><span>도서관 일정</span></a></li>
+                                            <li><a href="#" title="뉴스레터"><span>뉴스레터</span></a></li>
+                                            <li><a href="#" title="문화프로그램 안내"><span>문화프로그램 안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="도서관 소개">도서관 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="소개/비전/연혁"><span>소개/비전/연혁</span></a></li>
+                                            <li><a href="#" title="조직 및 연락처"><span>조직 및 연락처</span></a></li>
+                                            <li><a href="#" title="도서관 규정"><span>도서관 규정</span></a></li>
+                                            <li><a href="#" title="도서관 성과"><span>도서관 성과</span></a></li>
+                                            <li><a href="#" title="Online Tour"><span>Online Tour</span></a></li>
+                                            <li><a href="#" title="중앙도서관 및 분관 안내"><span>중앙도서관 및 분관 안내</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="이용문의">이용문의</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="FAQ"><span>FAQ</span></a></li>
+                                            <li><a href="#" title="Q&A"><span>Q&A</span></a></li>
+                                            <li><a href="#" title="서비스별 연락처"><span>서비스별 연락처</span></a></li>
+                                            <li><a href="#" title="분실물/습득물 찾기"><span>분실물/습득물 찾기</span></a></li>
+                                            <li><a href="#" title="자료실"><span>자료실</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="이용자 그룹별 안내">이용자 그룹별 안내</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학부생"><span>학부생</span></a></li>
+                                            <li><a href="#" title="대학원생"><span>대학원생</span></a></li>
+                                            <li><a href="#" title="졸업생/수료생"><span>졸업생/수료생</span></a></li>
+                                            <li><a href="#" title="사이버대 이용자"><span>사이버대 이용자</span></a></li>
+                                            <li><a href="#" title="외부인"><span>외부인</span></a></li>
+                                            <li><a href="#" title="장애인 서비스"><span>장애인 서비스</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="기증/기부">기증/기부</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="자료 기증 프로그램"><span>기증안내</span></a></li>
+                                            <li><a href="#" title="기부 프로그램"><span>기증자료</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="wmItem5">
+                                <a href="#" title="My Library">My Library</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#" title="My 정보">My 정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="My 개인정보"><span>My 개인정보</span></a></li>
+                                            <li><a href="#" title="My 서재"><span>My 서재</span></a></li>
+                                            <li><a href="#" title="My 서평"><span>My 서평</span></a></li>
+                                            <li><a href="#" title="My 검색어"><span>My 검색어</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="My 자료">My 자료</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="자료대출 현황"><span>자료대출 현황</span></a></li>
+                                            <li><a href="#" title="자료예약 현황"><span>자료예약 현황</span></a></li>
+                                            <li><a href="#" title="자료구입 신청 현황"><span>자료구입 신청 현황</span></a></li>
+                                            <li><a href="#" title="서가에 없는 도서 찾기 현황"><span>서가에 없는 도서 찾기 현황</span></a></li>
+                                            <li><a href="#" title="타기관 자료 대출 신청/현황"><span>타기관 자료 대출 신청/현황</span></a></li>
+                                            <li><a href="#" title="타기관 자료 복사 신청/현황"><span>타기관 자료 복사 신청/현황</span></a></li>
+                                            <li><a href="#" title="서비스 요금 온라인 결제"><span>서비스 요금 온라인 결제</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="My AI 및 빅데이터">My AI 및 빅데이터</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="내독서취향"><span>이용교육 신청현황</span></a></li>
+                                            <li><a href="#" title="독서통계"><span>연구지원서비스 신청현황</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="My 공간">My 공간</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="열람실 좌석 이용"><span>열람실 좌석 이용</span></a></li>
+                                            <li><a href="#" title="스터디룸/세미나룸 이용"><span>스터디룸/세미나룸 이용</span></a></li>
+                                            <li><a href="#" title="기타 공간 이용"><span>기타 공간 이용</span></a></li>
+                                            <li><a href="#" title="타기관 방문/열람 신청/현황"><span>타기관 방문/열람 신청/현황</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="기타">기타</a>
+                                        <ul class="depth3">
+                                            <li><a href="#" title="학술정보교육 신청 현황"><span>학술정보교육 신청 현황</span></a></li>
+                                            <li><a href="#" title="전화/이메일 문의 신청 현황"><span>전화/이메일 문의 신청 현황</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="wholeMenuClose" href="#" title=""><img src="../../image/ko/local/wholeMenuClose.png"></a>
+                </div>
+            </div>
+        </header>
+        <div id="divContents">
+            <div class="center">
+                <div id="divSearch">
+                    <form action="/searchTotal/result" method="get" name="searchForm">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <input type="hidden" name="st" value="KWRD">
+                            <input type="hidden" name="si" value="TOTAL">
+                            <input class="inputText" type="text" name="q" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
+                            <input class="searchBtn" type="submit" title="검색" alt="검색">
+                        </fieldset>
+                    </form>
+                </div>
+                <h2 id="divTitle">도서관 이용시간</h2>
+                <div id="divLocation">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="#" title="자료이용">자료이용</a></li>
+                        <li><a href="#" title="시설이용">시설이용</a></li>
+                        <li><a href="#" title="도서관 이용시간">도서관 이용시간</a></li>
+                    </ul>
+                </div>
+                <div id="divTabMenu">
+                    <div class="inner">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide menu selected"><a href="#" title="서울">서울</a></li>
+                            <li class="swiper-slide menu"><a href="#" title="신청현황">신청현황</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="divContent">
+                    <div class="guide">
+                        
+                        <div class="guideBox">
+                            <h3 class="guideTit1">서울 캠퍼스 도서관 이용시간</h3>
+                            <div class="guideTable1">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 15%;">
+                                        <col style="width: 20%;">
+                                        <col style="width: 20%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 15%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">구분</th>
+                                            <th>위치</th>
+                                            <th>평일</th>
+                                            <th>토요일</th>
+                                            <th>공휴일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="7">중앙도서관</td>
+                                            <td>중앙자료실</td>
+                                            <td>원형 1층</td>
+                                            <td rowspan="2">학기중 08:30-21:00<br>방학중 09:00-17:30</td>
+                                            <td rowspan="2">학기중 09:00-17:00<br>방학중 휴관</td>
+                                            <td rowspan="2">휴관</td>
+                                        </tr>
+                                        <tr>
+                                            <td>참고자료실</td>
+                                            <td>원형 2, 3층</td>
+                                        </tr>
+                                        <tr>
+                                            <td>특수자료실</td>
+                                            <td>3층</td>
+                                            <td>09:00-17:30</td>
+                                            <td colspan="2">휴관</td>
+                                        </tr>
+                                        <tr>
+                                            <td>제1열람실</td>
+                                            <td>1층</td>
+                                            <td colspan="3">24시간</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                집중열람실<br>
+                                                제2~3열람실
+                                            </td>
+                                            <td>
+                                                1층<br>
+                                                2층
+                                            </td>
+                                            <td colspan="3">06:00~24:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>제4열람실</td>
+                                            <td>4층</td>
+                                            <td colspan="3">06:00~24:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>그룹스터디룸</td>
+                                            <td>1층</td>
+                                            <td colspan="3">09:00-21:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">분관</td>
+                                            <td>한의학도서관 </td>
+                                            <td>한의과대학관 4층</td>
+                                            <td rowspan="3">09:00-17:30</td>
+                                            <td colspan="2" rowspan="3">휴관</td>
+                                        </tr>
+                                        <tr>
+                                            <td>법학도서관</td>
+                                            <td>제1법학관 5, 6층</td>
+                                        </tr>
+                                        <tr>
+                                            <td>의학계열도서관</td>
+                                            <td>의학계열도서관<br>(의학관 2층 연결)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>의학계열도서관 열람실</td>
+                                            <td>의학계열도서관 5,6층</td>
+                                            <td colspan="3">07:00-23:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경희 의료원</td>
+                                            <td>의료원도서실 </td>
+                                            <td>경희 의료원 정보행정동 B2층</td>
+                                            <td>08:30-17:30</td>
+                                            <td colspan="2">휴관</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="ex">※ 모든 분관 도서관 및 의학계열도서관 열람실은 전공과 상관없이 이용가능</p>
+                        </div>
+                        <!-- <div class="guideInquiry">
+                            <div class="inquiryTop">
+                                <h3>이용문의</h3>
+                            </div>
+                            <div class="inquiryCont">
+                                <ul>
+                                    <li><span>국제C 중앙도서관 자료열람실 연구지원데스크</span><a href="tel:031-201-3221/3222">031-201-3221/3222</a>,<a href="mailto:library@khu.ac.kr" title="">library@khu.ac.kr</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="divQuick">
+                    <a class="quickBtn" href="#" title="">열기</a>
+                    <div>
+                        <div class="quickTit">
+                            <p>Quick Menu</p>
+                        </div>
+                        <div class="quickList">
+                            <ul>
+                                <li>
+                                    <a href="#" title="희망도서 구입신청" target="_self">
+                                        <span class="icon">
+                                            <img src="../../image/ko/local/quickMenu1.png" alt="희망도서 구입신청">
+                                        </span>
+                                        <span>희망도서 구입신청</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="원문복사/대출신청" target="_self">
+                                        <span class="icon">
+                                            <img src="../../image/ko/local/quickMenu2.png" alt="원문복사/대출신청">
+                                        </span>
+                                        <span>원문복사/대출신청</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="대출/갱신현황" target="_self">
+                                        <span class="icon">
+                                            <img src="../../image/ko/local/quickMenu3.png" alt="대출/갱신현황">
+                                        </span>
+                                        <span>대출/갱신현황</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Q&A" target="_self">
+                                        <span class="icon">
+                                            <img src="../../image/ko/local/quickMenu4.png" alt="Q&A">
+                                        </span>
+                                        <span>Q&A</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="좌석예약" target="_self">
+                                        <span class="icon">
+                                            <img src="../../image/ko/local/quickMenu5.png" alt="좌석예약">
+                                        </span>
+                                        <span>좌석예약</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="blackBg"></div>
+        </div>
+        <footer id="divFooter" class="section fp-auto-height" data-anchor="footer">
+            <div class="footer1">
+                <div>
+                    <div class="footerMenu">
+                        <ul>
+                            <li><a href="#" title="오시는 길">오시는 길</a></li>
+                            <li><a class="point" href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                            <li><a href="#" title="이메일무단수집거부">이메일 무단수집 거부</a></li>
+                            <li><a href="#" title="저작권보호 방침">저작권보호 방침</a></li>
+                            <li><a href="#" title="교내 전화번호">교내 전화번호</a></li>
+                        </ul>
+                    </div>
+                    <div class="contectList">
+                        <div class="campus">
+                            <p class="campusName">서울캠퍼스</p>
+                            <ul>
+                                <li><span class="name">출입/시설</span><span class="tel">02-961-0072</span></li>
+                                <li><span class="name">대출/반납</span><span class="tel">02-961-0074,0078</span></li>
+                                <li><span class="name">전자정보/연구지원</span><span class="tel">02-961-0079</span></li>
+                                <li class="etc">
+                                    <p><span class="name">팩스</span><span class="tel">02-961-9555</span></p>
+                                    <p><span class="name">이메일</span><a href="mailto:khisweb@khu.ac.kr">khisweb@khu.ac.kr</a></p>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="campus">
+                            <p class="campusName">국제캠퍼스</p>
+                            <ul>
+                                <li><span class="name">전화</span><span class="tel">031)201-3210,3222</span></li>
+                                <li class="etc">
+                                    <p><span class="name">팩스</span><span class="tel">031-204-8111</span></p>
+                                    <p><span class="name">이메일</span><a href="mailto:library@khu.ac.kr">library@khu.ac.kr</a></p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div>
+                    <div class="fLogo"><img src="../../image/ko/local/f_logo.png"></div>
+                    <div class="address">
+                        <p>
+                            <span>서울캠퍼스 02447   서울특별시 동대문구 경희대로 26</span>
+                            <span>국제캠퍼스   17104    경기도 용인시 기흥구 덕영대로 1732</span>
+                        </p>
+                        <p class="copyRight">Copyright (c)  경희대학교 중앙도서관  All Rights Reserved.</p>
+                    </div>
+                    <div class="familySite">
+                        <a href="#" title="">관련사이트</a>
+                        <ul class="siteList">
+                            <li><a href="#" title="">관련사이트1</a></li>
+                            <li><a href="#" title="">관련사이트2</a></li>
+                            <li><a href="#" title="">관련사이트3</a></li>
+                            <li><a href="#" title="">관련사이트4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gotoBtnW">
+                <a class="gotoTop" href="#main1" title="상단으로 가기">Top</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
