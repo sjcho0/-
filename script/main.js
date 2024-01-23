@@ -1,6 +1,16 @@
 $(function(){
     var winWidth = window.innerWidth || document.documentElement.clientWidth;//미디어쿼리 사이즈와 $(window).width()가 인식하는 px단위 사이즈가 달라서 선언한 변수 : clinentWidth 와 innerWidth의 사이즈는 동일하나 innerWidth는 익스플로러 9 미만 버전은 인식하지 못하므로 동시선언
+	
+    // --vh 모바일 높이값
+	function setScreenSize(){
+		let vh = window.innerHeight * 0.01;
+	  
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}  
+	setScreenSize();
+	window.addEventListener('resize', () => setScreenSize());
 
+    // 
     $(window).on("scroll", function(){
         winWidth = window.innerWidth || document.documentElement.clientWidth;
         let scrollTop = $(this).scrollTop();
