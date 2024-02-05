@@ -145,7 +145,7 @@
 .guideInquiry .inquiryCont ul li::before{content: ""; display: block; width: 3px; height: 3px; background: #000000; position: absolute; left: 0; top: 0.75em;}
 .guideInquiry .inquiryCont ul li span{margin-right: 15px;}
 .guideInquiry .inquiryCont ul li a[href^="tel:"],
-.guideInquiry .inquiryCont ul li a[href^="mailto:"]{display: inline-block; font-family: NotoSansB, sans-serif; font-size: 16px; color: #2958af; margin: 0 5px;}
+.guideInquiry .inquiryCont ul li a[href^="mailto:"]{display: inline-block; font-family: NotoSansB, sans-serif; font-size: 16px; color: #2958af;}
 @media screen and (max-width:1064px){
     .guideInquiry .inquiryTop h3{font-size: 18px;}
     .guideInquiry .inquiryCont ul li{font-size: 15px;}
@@ -263,7 +263,7 @@ ul .stepList2{margin: 10px 0;}
 }
 
 /* 학위논문작성 */
-.guide .downloadList{border-spacing: 20px 40px; margin: -40px -20px; width: auto;}
+.downloadList{border-spacing: 20px 40px; margin: -40px -20px;}
 .downloadList td{color: #5f5f5f; line-height: 1.2em;}
 .downloadList td:last-child{vertical-align: bottom;}
 @media screen and (max-width:1064px){
@@ -712,25 +712,6 @@ table.guideBook .down1{margin-left: 5px;}
     .dbList td img{width: 100px;}
     .dbList td:first-child{width: 100px;}
 }
-/* dicolList */
-.dicolList{border-spacing: 20px 40px; margin: -40px -20px;}
-.dicolList td{color: #5f5f5f; line-height: 1.2em;}
-.dicolList td img{width: 200px; height: auto;}
-.dicolList td:first-child{width: 140px;}
-@media screen and (max-width:1064px){
-    .dicolList{border-spacing: 20px 30px; margin: -30px -20px;}
-    .dicolList td{font-size: 14px;}
-}
-@media screen and (max-width:768px){
-    .dicolList{border-spacing: 10px 20px;  margin: -20px -10px;}
-    .dicolList,.dicolList tr,.dicolList td{display: block;}
-    .dicolList tr td img{margin-bottom: 10px;}
-    .dicolList tr td:last-child{margin-bottom: 30px;}
-    .dicolList tr:last-child td:last-child{margin-bottom: 0px;}
-    .dicolList td{font-size: 13px;}
-    .dicolList td img{width: 150px;}
-    .dicolList td:first-child{width: 150px;}
-}
 
 
 /* 조직도 */
@@ -820,4 +801,34 @@ table.guideBook .down1{margin-left: 5px;}
 }
 @media screen and (max-width:768px){
     .libMap{padding: 0px;}
+}
+
+
+/* 이메일 무단 수집 거부, 저작권보호정책*/
+.copyrightImg img{margin: 5px;}
+.copyrightImg img:nth-child(2){height: 57px;}
+
+
+/* 자료구입 신청 */
+.guidePurchase{display: flex; justify-content: space-between;}
+.guidePurchase li{width: calc(50% - 15px); background: #edf1f5; padding: 40px 30px; box-sizing: border-box; border-radius: 8px;}
+.guidePurchase li>div{margin-bottom: 20px;}
+.guidePurchase li>div:last-child{margin-bottom: 0;}
+.guidePurchase li h4{font-family: NotoSansB, sans-serif; font-size: 17px; color: #243a72; margin-bottom: 5px;}
+.guidePurchase li p{margin: 10px 0 5px; color: #393838;}
+.guidePurchase li a{display: inline-block; padding: 6px 35px 6px 15px; border: 2px solid #2958af; background: #fff url(../../../image/ko/local/guide/goLink.png) no-repeat right 15px center/15px; color: #2958af; border-radius: 5px; font-size: 14px;}
+.guidePurchase li.purchase1{background: #edf1f5 url(../../../image/ko/local/guide/purchase1.png) no-repeat right 30px center;}
+.guidePurchase li.purchase2{background: #edf1f5 url(../../../image/ko/local/guide/purchase2.png) no-repeat right 30px center;}
+.guidePurchase li.purchase3{background: #edf1f5 url(../../../image/ko/local/guide/purchase3.png) no-repeat right 30px center;}
+.guidePurchase li.purchase4{background: #edf1f5 url(../../../image/ko/local/guide/purchase4.png) no-repeat right 30px center;}
+@media screen and (max-width:1064px){
+    .guidePurchase li{width: calc(50% - 10px); padding: 30px 20px;  background-image: none!important;}
+    .guidePurchase li h4{font-size: 16px;}
+    .guidePurchase li p{font-size: 14px;}
+    .guidePurchase li a{padding: 5px 30px 5px 10px; background-position: right 10px center; background-size: 14px; font-size: 13px;}
+}
+@media screen and (max-width:768px){
+    .guidePurchase{display: block;}
+    .guidePurchase li{width: 100%; margin-bottom: 15px;}
+
 }

@@ -82,6 +82,8 @@ $(function(){
         winWidth = window.innerWidth || document.documentElement.clientWidth;
         if(winWidth <= 1064){
             $("#divWrapper").removeClass("topMenuOpen");
+            $("#divTopMenu .depth2W").hide();
+            $("#divTopMenu>ul>li").removeClass("on");
             $(".blackBg").fadeOut();
         }
     });
@@ -219,9 +221,17 @@ $(function(){
         observeParents: true,
     });
 	$(window).on("resize load",function(){
-		if($('#divTabMenu .menu').length > 0){
-			divTabMenuSwiper.slideTo($("#divTabMenu .menu.selected").index());	
-		}
+        if($("#divTabMenu").length > 0){
+            if(divTabMenuSwiper.length > 1){
+                // 여러개
+                $.each(divTabMenuSwiper,function(i,item){
+                    item.slideTo($(item.el).find(".menu.selected").index());
+                });
+            }else{
+                // 한개
+                divTabMenuSwiper.slideTo($("#divTabMenu .menu.selected").index());	
+            }
+        }
     });
 
 

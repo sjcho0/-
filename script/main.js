@@ -87,6 +87,8 @@ $(function(){
         winWidth = window.innerWidth || document.documentElement.clientWidth;
         if(winWidth <= 1064){
             $("#divWrapper").removeClass("topMenuOpen");
+            $("#divTopMenu .depth2W").hide();
+            $("#divTopMenu>ul>li").removeClass("on");
             $(".blackBg").fadeOut();
         }
     });
@@ -402,6 +404,7 @@ $(function(){
         vertical: true,
         verticalSwiping:true,
         infinite: true,
+        draggable : true,
         arrows:true,
         appendArrows : $(".usingTime .campusTime.seoul .controller"),
         prevArrow: $(".usingTime .campusTime.seoul .prevBtn"),
@@ -415,6 +418,8 @@ $(function(){
 						settings: {	
 							slidesToShow: 4,
                             slidesPerRow: 1,
+                            draggable: true,
+                            swipeToSlide:true,
 						} 
 					}
 		]
@@ -439,10 +444,72 @@ $(function(){
                 settings: {	
                     slidesToShow: 4,
                     slidesPerRow: 1,
+                    draggable: true,
+                    swipeToSlide:true,
                 } 
             }
 ]
     });
+    // verticalMode로 swipeToSlide: true 작동하도록
+    $(".usingTime .campusTime.seoul .timeList, .usingTime .campusTime.inter .timeList").each(function() {
+		this.slick.getSlideCount = function() {
+
+        var _ = this,
+            slidesTraversed, swipedSlide, centerOffset;
+            
+
+        centerOffset = _.options.centerMode === true ? _.slideWidth * Math.floor(_.options.slidesToShow / 2) : 0;
+
+      if (_.options.swipeToSlide === true) {
+        		
+            _.$slideTrack.find('.slick-slide').each(function(index, slide) {
+                var offsetPoint = slide.offsetLeft,
+                    outerSize = $(slide).outerWidth();
+                
+                if(_.options.vertical === true) {
+                    offsetPoint = slide.offsetTop;
+                    outerSize = $(slide).outerHeight();
+                }
+                if (offsetPoint - centerOffset + (outerSize / 2) > (_.swipeLeft * -1)) {
+                    swipedSlide = slide;
+                    return false;
+                }
+            });
+            slidesTraversed = Math.abs($(swipedSlide).attr('data-slick-index') - _.currentSlide) || 1;
+            
+            return slidesTraversed;
+        } else {
+            return _.options.slidesToScroll;
+        }
+
+    };
+    
+		this.slick.getNavigableIndexes = function() {
+
+        var _ = this,
+            breakPoint = 0,
+            counter = 0,
+            indexes = [],
+            max;
+
+        if (_.options.infinite === false) {
+            max = _.slideCount;
+        } else {
+            breakPoint = _.options.slideCount * -1;
+            counter = _.options.slideCount * -1;
+            max = _.slideCount * 2;
+        }
+
+        while (breakPoint < max) {
+            indexes.push(breakPoint);
+            breakPoint = counter + _.options.slidesToScroll;
+            counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+        }
+
+        return indexes;
+
+    };
+});
 
 
     // 도서관 일정 탭

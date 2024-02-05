@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="style/ko/standard/common.css">
     <link rel="stylesheet" href="style/ko/theme/sub.css">
 
+    <link rel="stylesheet" href="style/ko/search/total/brief.css">
+    <link rel="stylesheet" href="style/ko/search/total/main.css">
+
     <script src="script/sub.js"></script>
 
 </head>
@@ -339,14 +342,13 @@
                     <div id="divGlobalMenu">
                         <ul>
                             <li class="myInfo">
-                                <span class="userName"><span class="name">퓨쳐누리123</span>님</span>
                                 <a href="#" title="">
                                     <img class="whiteImg" src="image/ko/local/myInfo.png">
                                     <img class="colorImg" src="image/ko/local/myInfo_c.png">
                                 </a>
                                 <div class="myInfoW">
                                     <div class="myInfoTop">
-                                        <p class="userName"><a class="name" href="#">퓨쳐누리(FUTURENURI)님</a>WELCOME!</p>
+                                        <p class="userName"><a class="name" href="#">퓨쳐누리님</a>WELCOME!</p>
                                         <ul class="limitInfo">
                                             <li><span>예약제재기간 :</span> <span id="reserveDate">제재 대상이 아닙니다.</span></li>
                                             <li><span>대출 제재기간 :</span> <span id="loanDate">제재 대상이 아닙니다.</span></li>
@@ -700,36 +702,109 @@
                         <li><a href="#" title="통합검색">통합검색</a></li>
                     </ul>
                 </div>
-                <div id="divTabMenu">
-                    <div class="inner">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu selected"><a href="#" title="완전일치">완전일치</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="divTabMenu">
-                    <div class="inner">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu selected"><a href="#" title="완전일치">완전일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                        </ul>
-                    </div>
-                </div>
+               
                 <div id="divContent">
+                    <div class="searchResult">
+                        <div class="searchWords">
+                            <dl class="searchKeyword">
+                                <dt>검색어</dt>
+                                <dd>[ <span id="keyword" class="keyword">harry</span> ]</dd>
+                            </dl>
+                        </div>
+                        
+                        <div class="divisions">
+                            <!-- 소장자료검색 -->
+                            <div class="division">
+                               
+                            </div>
+                            
+                            <div class="division">
+                              
+                            </div>
+                            
+                            
+                        </div>
+                    
+                        <div class="divisions">
+                            <!-- EDS 전자자료 -->
+                            <div class="division">
+                                
+                            </div>
+                            
+                            <div class="division">
+                        
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="divisions">
+                            <div class="division">
+                               
+                            </div>
+                            <div class="division">
+                               
+                            </div>
+                        </div>
+                        
+                        <div class="divisions">
+                            <div class="division">
+                               
+                            </div>
+                            
+                            <div class="division">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
                    
+                    <div class="searchOther">
+                        <h3>찾는 자료가 없으신가요?</h3>
+                        <div class="otherList">
+                            <div class="other1">
+                                <h4>더 찾아보기</h4>
+                                <ul>
+                                    <li><a href="https://scholar.google.co.kr/scholar?q=harry" target="_blank" title="새창열기"><img src="/image/ko/solution/local/total/google.png" alt="Google" target="_blank"></a></li>
+                                    <li><a href="#"><img src="/image/ko/solution/local/total/pqdt.png" alt="PQDT" target="_blank"></a></li>		
+                                    <li><a href="/outlink?moduleId=searchTotal&amp;targetUrl=http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=WEB&amp;SrcAuth=HSB&amp;DestApp=UA&amp;DestLinkType=GeneralSearchSummary&amp;topic=harry" target="_blank"><img src="/image/ko/solution/local/total/wos.png" alt="WEB OF SCIENCE"></a></li>
+                                    <li><a href="/outlink?moduleId=searchTotal&amp;targetUrl=http://www.scopus.com/results/results.uri?sort=plf-f&amp;src=s&amp;sot=a&amp;sdt=a&amp;sl=12&amp;origin=searchadvanced&amp;editSaveSearch=&amp;txGid=0&amp;s=harry" target="_blank"><img src="/image/ko/solution/local/total/scopus.png" alt="Scopus"></a></li>
+                                </ul>
+                            </div>
+                            <div class="other2">
+                                <h4>자료신청하기</h4>
+                                <ul>
+                                    <li class="app1">
+                                        <a href="/webcontent/info/9">자료구입신청</a>
+                                    </li>
+                                    <li class="app2">
+                                        <a href="/webcontent/info/10">타도서관 자료대출 신청</a>
+                                    </li>
+                                    <li class="app3">
+                                        <a href="/webcontent/info/11">타도서관 자료복사 신청</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchInfoBox">
+                        <h3 class="searchTitle1">검색관련 도움이 필요하신가요?</h3>
+                        <ul>
+                            <li class="listStyle1"><a href="#" title="">사서에게 물어보기</a></li>
+                            <li class="listStyle1"><a href="#" title="">자주하는 질문보기</a></li>
+                            <li class="listStyle1"><a href="#" title="">전자자료 교외접속 서비스 안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="searchInquiry">
+                        <div class="inquiryTop">
+                            <h3>이용문의</h3>
+                        </div>
+                        <div class="inquiryCont">
+                            <ul>
+                                <li><span>서울C 학술서비스팀</span><a href="tel:02-961-0079" title="">02-961-0079</a>,<a href="mailto:khsd3016@khu.ac.kr" title="">khsd3016@khu.ac.kr</a></li>
+                                <li><span>국제C 중앙도서관 자료열람실 연구지원데스크</span><a href="tel:031-201-3222" title="">031-201-3222</a>,<a href="mailto:library@khu.ac.kr" title="">library@khu.ac.kr</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div id="divQuick">
                     <a class="quickBtn" href="#" title="">열기</a>

@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="style/ko/standard/common.css">
     <link rel="stylesheet" href="style/ko/theme/sub.css">
 
+    <link rel="stylesheet" href="style/ko/search/total/brief.css">
+    <link rel="stylesheet" href="style/ko/search/total/main.css">
+
     <script src="script/sub.js"></script>
 
 </head>
@@ -339,14 +342,13 @@
                     <div id="divGlobalMenu">
                         <ul>
                             <li class="myInfo">
-                                <span class="userName"><span class="name">퓨쳐누리123</span>님</span>
                                 <a href="#" title="">
                                     <img class="whiteImg" src="image/ko/local/myInfo.png">
                                     <img class="colorImg" src="image/ko/local/myInfo_c.png">
                                 </a>
                                 <div class="myInfoW">
                                     <div class="myInfoTop">
-                                        <p class="userName"><a class="name" href="#">퓨쳐누리(FUTURENURI)님</a>WELCOME!</p>
+                                        <p class="userName"><a class="name" href="#">퓨쳐누리님</a>WELCOME!</p>
                                         <ul class="limitInfo">
                                             <li><span>예약제재기간 :</span> <span id="reserveDate">제재 대상이 아닙니다.</span></li>
                                             <li><span>대출 제재기간 :</span> <span id="loanDate">제재 대상이 아닙니다.</span></li>
@@ -681,7 +683,7 @@
         </header>
         <div id="divContents">
             <div class="center">
-                <div id="divSearch">
+                <!-- <div id="divSearch">
                     <form action="/searchTotal/result" method="get" name="searchForm">
                         <fieldset>
                             <legend>검색</legend>
@@ -691,7 +693,7 @@
                             <input class="searchBtn" type="submit" title="검색" alt="검색">
                         </fieldset>
                     </form>
-                </div>
+                </div> -->
                 <h2 id="divTitle">통합검색</h2>
                 <div id="divLocation">
                     <ul>
@@ -700,36 +702,76 @@
                         <li><a href="#" title="통합검색">통합검색</a></li>
                     </ul>
                 </div>
-                <div id="divTabMenu">
-                    <div class="inner">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu selected"><a href="#" title="완전일치">완전일치</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="divTabMenu">
-                    <div class="inner">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu selected"><a href="#" title="완전일치">완전일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="키워드">키워드</a></li>
-                            <li class="swiper-slide menu"><a href="#" title="전방일치">전방일치</a></li>
-                        </ul>
-                    </div>
-                </div>
+               
                 <div id="divContent">
-                   
+	
+		 
+                    <!-- 검색어가 없을 경우 검색창 출력 -->
+                    <div class="dataSearch">
+                        <form name="searchTotalForm" action="/searchTotal/result" method="get">
+                            <input type="hidden" name="st" value="KWRD">
+                            <input type="hidden" name="si" value="TOTAL">
+                            <fieldset>
+                                <p class="keyword"><input name="q" title="검색어 입력" id="query" type="text"></p>
+                            </fieldset>
+                            <input class="searchBtn" type="submit" value="검색">
+                        </form>
+                    </div>
+                    <div class="searchInfoBox">
+                        <h3 class="searchTitle1">통합검색 안내</h3>
+                        <ul>
+                            <li class="listStyle1">
+                                통합검색은 본교 도서관 소장 실물 및 전자 자료와 외부기관 자료를 한번에 검색해 주는 서비스입니다.
+                                
+                                <ul class="iconList">
+                                    <li class="list1">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon1.png"></span>
+                                        <h4 class="searchTitle2">추천 정보</h4>
+                                        <p>학술DB 및 학술지, 용어 추천 서비스</p>
+                                    </li>
+                                    <li class="list2">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon2.png"></span>
+                                        <h4 class="searchTitle2">소장자료</h4>
+                                        <p>도서관 소장 도서, 비도서, 연속간행물, 학위논문 등 실물 자료 검색</p>
+                                    </li>
+                                    <li class="list3">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon3.png"></span>
+                                        <h4 class="searchTitle2">학술지 논문</h4>
+                                        <p>도서관 제공 전자저널 및 학술DB 논문 검색</p>
+                                    </li>
+                                    <li class="list4">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon4.png"></span>
+                                        <h4 class="searchTitle2">전자저널</h4>
+                                        <p>도서관 제공 전자책 및 동영상강의 리스트 검색</p>
+                                    </li>
+                                    <li class="list5">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon5.png"></span>
+                                        <h4 class="searchTitle2">전자책/동영상강의</h4>
+                                        <p>통합검색은 소장자료 및 전자자료를 유형별로 검색・확인할 수 있습니다.</p>
+                                    </li>
+                                    <li class="list6">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon6.png"></span>
+                                        <h4 class="searchTitle2">RISS 학위논문</h4>
+                                        <p>국내 100여개 도서관 소장 학위논문 검색</p>
+                                    </li>
+                                    <li class="list7">
+                                        <span class="icon"><img src="image/ko/local/guide/searchIcon7.png"></span>
+                                        <h4 class="searchTitle2">외부기관 자료검색(Open-API)</h4>
+                                        <p>RISS, ScienceON, KCI, 국회도서관, Kakao 자료 검색</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="searchInfoBox">
+                        <h3 class="searchTitle1">기타 검색안내</h3>
+                        <ul>
+                            <li class="listStyle1">통합검색은 소장자료 및 전자자료를 유형별로 검색・확인할 수 있습니다.</li>
+                            <li class="listStyle1">소장자료 메뉴에서는 단행본, 전자책, 연속간행물, 멀티미디어 자료(CD, DVD 등), 학위논문 등 도서관에서 소장중인 자료만 검색합니다.</li>
+                            <li class="listStyle1">온라인으로 검색 및 이용 가능한 형태의 자료는 <a href="/eds/advanced" target="_blank" title="새창열기">전자자료</a> 에서 검색하여 서지사항, 원문(Full-Text)을 볼 수 있습니다.</li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div id="divQuick">
                     <a class="quickBtn" href="#" title="">열기</a>
