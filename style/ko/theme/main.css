@@ -90,9 +90,14 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 #divGlobalMenu>ul>li>a{color: #020202; font-size: 15px;}
 #divGlobalMenu>ul>li.login>a{min-width: 55px;}
 #divGlobalMenu>ul>li.myInfo{display: flex; align-items: center; position: relative;}
-#divGlobalMenu>ul>li.myInfo>.userName{position: absolute; left: 50%; top: calc(100% + 12px); transform: translateX(-50%); white-space: nowrap; background: #a3fffc; border-radius: 4px; align-items: center; justify-content: center; padding: 5px 8px;  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.24); text-align: center; z-index: 1;}
-#divGlobalMenu>ul>li.myInfo>.userName::after{content: ""; display: block; width: 8px; height: 8px; background: inherit; position: absolute; left: 50%; top: -4px; transform: translateX(-50%) rotate(45deg);}
+#divGlobalMenu>ul>li.myInfo>.userName{display: flex; align-items: center;}
+#divGlobalMenu>ul>li.myInfo>.userName .name{display: inline-block; max-width: 120px; color: #fff; margin-right: 10px;}
+#divGlobalMenu>ul>li.myInfo>.userName .userid{display: inline-block; background-color: #ffc342; width: 24px; height: 24px; overflow: hidden; border-radius: 2px; text-align: center;}
+#divGlobalMenu>ul>li.myInfo>.userName .userid img{height: 20px;}
 #divGlobalMenu>ul>li.myInfo>a{display: inline-block; padding: 0 15px;}
+#divGlobalMenu>ul>li.myInfo>a>.name{display: none; position: absolute; right: 0; top: calc(100% + 12px); transform: translateX(25%); white-space: nowrap; color: #020202; background: #a3fffc; border-radius: 4px; align-items: center; justify-content: center; padding: 5px 8px;  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.24); text-align: center; z-index: 1;}
+#divGlobalMenu>ul>li.myInfo>a>.name::after{content: ""; display: block; width: 8px; height: 8px; background: inherit; position: absolute; left: 50%; top: -4px; transform: translateX(-50%) rotate(45deg);}
+#divGlobalMenu>ul>li.myInfo>a:hover>.name{display: block;}
 #divGlobalMenu>ul>li.myInfo .colorImg{display: none;}
 /* 요약정보 */
 .myInfoW{display: none; position: absolute; width: 400px; right: 0; top: calc(100% + 25px); padding: 25px 0; background: #fafafa; border-radius: 16px; border: 1px solid #f1f1f1; box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.19); box-sizing: border-box; z-index: 2;}
@@ -123,7 +128,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 .myInfoW .closeBtn{position: absolute; right: 20px; top: 20px;}
 @media screen and (min-width:1900px){
   #divTopMenu{margin-right: 0;}
-  #divGlobalMenu>ul>li.myInfo>a{display: inline-block; padding: 0 25px;}
+  #divGlobalMenu>ul>li.myInfo>a{display: inline-block; padding: 0 25px 0 10px;}
   .myInfoW{right: -10px;}
 }
 @media screen and (max-width:1800px){
@@ -144,7 +149,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   .logo a img{width: 230px;}
   #divGlobalMenu>ul>li{margin: 0 8px;}
   #divGlobalMenu>ul>li>a{color: #fff}
-  #divGlobalMenu>ul>li.myInfo>a{padding: 0 5px;}
+  #divGlobalMenu>ul>li.myInfo>a{padding: 0 5px 0 10px;}
   #divGlobalMenu>ul>li:last-child{margin-right: 10px;}
 }
 @media screen and (max-width:1400px){
@@ -277,7 +282,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   .wholeMenu .mobileTop>div{display: -webkit-box; display: -ms-flexbox; display: flex;}
   .wholeMenu .mobileTop .mTop2{padding: 25px 0 10px;}
   .wholeMenu .mobileTop .mobileId{display: inline-block; background: #ffc342 url(../../../image/ko/local/mobile_id.png) no-repeat left 6px top 5px; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap; margin-bottom: 7px; margin-right: 4px;}
-  .wholeMenu .mobileTop .nfcBtn{display: inline-block; background: #fff url(../../../image/ko/local/NFC.png) no-repeat left 6px center; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap;}
+  .wholeMenu .mobileTop .nfcId{display: inline-block; background: #fff url(../../../image/ko/local/NFC.png) no-repeat left 6px center; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap;}
   .wholeMenu .mobileMenu{display: -webkit-box; display: -ms-flexbox; display: flex; padding-right: 45px; box-sizing: border-box; margin-left: auto; flex-shrink: 0;}
   .wholeMenu .mobileMenu>li{margin-left: 20px;}
   .wholeMenu .mobileMenu>li img{height: 20px;}

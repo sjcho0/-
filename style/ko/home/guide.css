@@ -832,3 +832,18 @@ table.guideBook .down1{margin-left: 5px;}
     .guidePurchase li{width: 100%; margin-bottom: 15px;}
 
 }
+
+
+/* guideVideo */
+.guideVideo{width: 736px; height: 414px; margin: 0 auto; max-width: 100%;}
+.guideVideo iframe{width: 100%; height: 100%;}
+@media screen and (max-width:768px){
+    .guideVideo{height: 350px;}
+}
+@media screen and (max-width:400px){
+    .guideVideo{height: 250px;}
+}
+
+/* guideImg */
+.guideImg{margin-bottom: 10px;}
+.guideImg img{max-width: 100%; border: 1px solid #ddd; border-radius: 8px;}

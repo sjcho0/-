@@ -220,7 +220,8 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   .wholeMenu .mobileTop{display: block; background: #0d326f; padding: 12px 15px; box-sizing: border-box; position: relative; z-index: 2;}
   .wholeMenu .mobileTop>div{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
   .wholeMenu .mobileTop .mTop2{padding: 25px 0 10px;}
-  .wholeMenu .mobileTop .mobileId{color: #ffc342; padding-left: 24px; background: url(../../../image/ko/local/mobile_id.png) no-repeat left center;}
+  .wholeMenu .mobileTop .mobileId{display: inline-block; background: #ffc342 url(../../../image/ko/local/mobile_id.png) no-repeat left 6px top 5px; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap; margin-bottom: 7px; margin-right: 4px;}
+  .wholeMenu .mobileTop .nfcId{display: inline-block; background: #fff url(../../../image/ko/local/NFC.png) no-repeat left 6px center; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap;}
   .wholeMenu .mobileMenu{display: -webkit-box; display: -ms-flexbox; display: flex; padding-right: 45px; box-sizing: border-box; margin-left: auto;}
   .wholeMenu .mobileMenu>li{margin-left: 20px;}
   .wholeMenu .mobileMenu>li img{height: 20px;}
@@ -251,7 +252,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   .wholeMenu .wholeMenuClose{top: 14px; right: 15px; width: auto; height: auto; line-height: 1em; border: 5px; z-index: 2;}
 }
 
-.blackBg{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 15;}
+.blackBg{display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 20;}
 
 
 
@@ -319,7 +320,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 
 /* divContent */
 #divContents{padding-top: 181px; box-sizing: border-box;}
-#divContents .center{width: 1460px; margin: 0 auto; position: relative;}
+#divContents>.center{width: 1460px; margin: 0 auto; position: relative;}
 #divContent{min-height: 550px; padding-bottom: 120px;}
 @media screen and (min-width: 2600px){
     #divContent{min-height: calc(100vh - 650px); box-sizing: border-box;}
@@ -328,17 +329,17 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   #divContents{padding-top: 160px;}
 }
 @media screen and (max-width: 1520px){
-    #divContents .center{width: 100%; padding: 0 30px; box-sizing: border-box;}
+    #divContents>.center{width: 100%; padding: 0 30px; box-sizing: border-box;}
 }
 @media screen and (max-width: 1200px){
     #divContents{padding-top: 125px;}
-    #divContents .center{padding: 0 20px;}
+    #divContents>.center{padding: 0 20px;}
 }
 @media screen and (max-width: 1024px){
     
 }
 @media screen and (max-width: 768px) {
-    #divContents .center{padding: 0 15px;}
+    #divContents>.center{padding: 0 15px;}
 
 }
 
