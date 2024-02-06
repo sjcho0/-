@@ -217,6 +217,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 #divWrapper.topMenuOpen #divTopMenu>ul>li>a{color: #222222;}
 #divWrapper.topMenuOpen #divGlobalMenu>ul>li>a{color: #020202;}
 #divWrapper.topMenuOpen #divGlobalMenu>ul>li.myInfo .userName{color: #020202;}
+#divWrapper.topMenuOpen #divGlobalMenu>ul>li.myInfo>.userName .name{color: #020202;}
 #divWrapper.topMenuOpen #divGlobalMenu>ul>li.myInfo .whiteImg{display: none;}
 #divWrapper.topMenuOpen #divGlobalMenu>ul>li.myInfo .colorImg{display: inline-block;}
 #divWrapper.fixed #divHeader{position: fixed;background: #fff; border-bottom: 1px solid #eeeeee; box-sizing: border-box; top: 0!important;}
@@ -225,6 +226,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 #divWrapper.fixed #divTopMenu>ul>li>a{color: #222222;}
 #divWrapper.fixed #divGlobalMenu>ul>li>a{color: #020202;}
 #divWrapper.fixed #divGlobalMenu>ul>li.myInfo .userName{color: #020202;}
+#divWrapper.fixed #divGlobalMenu>ul>li.myInfo>.userName .name{color: #020202;}
 #divWrapper.fixed #divGlobalMenu>ul>li.myInfo .whiteImg{display: none;}
 #divWrapper.fixed #divGlobalMenu>ul>li.myInfo .colorImg{display: inline-block;}
 #divWrapper.tInfoClose #divHeader{top: 20px;}
