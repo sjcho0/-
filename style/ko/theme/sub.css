@@ -76,9 +76,14 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 #divGlobalMenu>ul>li>a{color: #020202; font-size: 15px;}
 #divGlobalMenu>ul>li.login>a{min-width: 55px;}
 #divGlobalMenu>ul>li.myInfo{display: flex; align-items: center; position: relative;}
-#divGlobalMenu>ul>li.myInfo>.userName{position: absolute; left: 50%; top: calc(100% + 12px); transform: translateX(-50%); white-space: nowrap; background: #a3fffc; border-radius: 4px; align-items: center; justify-content: center; padding: 5px 8px;  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.24); text-align: center; z-index: 1;}
-#divGlobalMenu>ul>li.myInfo>.userName::after{content: ""; display: block; width: 8px; height: 8px; background: inherit; position: absolute; left: 50%; top: -4px; transform: translateX(-50%) rotate(45deg);}
-#divGlobalMenu>ul>li.myInfo>a{display: inline-block; padding: 0 15px;}
+#divGlobalMenu>ul>li.myInfo>.userName{display: flex; align-items: center;}
+#divGlobalMenu>ul>li.myInfo>.userName .name{display: inline-block; max-width: 120px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+#divGlobalMenu>ul>li.myInfo>.userName .userid{display: none; background-color: #fff; min-width: 24px; overflow: hidden; border-radius: 2px; text-align: center; border: 1px solid #bbb; padding: 1px 6px; box-sizing: border-box;}
+#divGlobalMenu>ul>li.myInfo>.userName .userid img{height: 20px;}
+#divGlobalMenu>ul>li.myInfo>a{display: inline-block; padding: 0 0 0 10px;}
+#divGlobalMenu>ul>li.myInfo>a>.name{display: none; position: absolute; right: 24px; top: calc(100% + 12px); transform: translateX(50%); color: #020202; background: #a3fffc; border-radius: 4px; align-items: center; justify-content: center; padding: 5px 8px;  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.24); text-align: center; z-index: 1; width: 150px;}
+#divGlobalMenu>ul>li.myInfo>a>.name::after{content: ""; display: block; width: 8px; height: 8px; background: inherit; position: absolute; left: 50%; top: -4px; transform: translateX(-50%) rotate(45deg);}
+#divGlobalMenu>ul>li.myInfo>a:hover>.name{display: block;}
 #divGlobalMenu>ul>li.myInfo .whiteImg{display: none;}
 /* 요약정보 */
 .myInfoW{display: none; position: absolute; width: 400px; right: 0; top: calc(100% + 25px); padding: 25px 0; background: #fafafa; border-radius: 16px; border: 1px solid #f1f1f1; box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.19); box-sizing: border-box; z-index: 2;}
@@ -89,7 +94,7 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 .myInfoW .myInfoCont::-webkit-scrollbar-thumb{background-color: rgba(0, 0, 0, 0.19);border-radius: 10px;background-clip: padding-box; border: 4px solid transparent;}
 .myInfoW .myInfoCont::-webkit-scrollbar-track{background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px white;}
 .myInfoW .userName{padding-left: 30px; background: url(../../../image/ko/local/myInfo_user.png) no-repeat left top 4px; font-family: Poppins, sans-serif; font-size: 12px; color: #909090; font-weight: bold; margin-bottom: 15px;}
-.myInfoW .userName .name{font-family: NotoSansB, sans-serif; font-size: 16px; color: #212121; margin-right: 10px;}
+.myInfoW .userName .name{font-family: NotoSansB, sans-serif; font-size: 16px; color: #212121;}
 .myInfoW .limitInfo{padding: 0 10px; box-sizing: border-box; margin-bottom: 10px;}
 .myInfoW .limitInfo>li{font-size: 15px; color: #212121; padding-left: 10px; position: relative; margin-bottom: 5px;}
 .myInfoW .limitInfo>li::after{content: ""; display: block; width: 3px; height: 3px; border-radius: 50%; background: #0d326f; position: absolute; left: 0; top: 10px;}
@@ -150,12 +155,13 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   #divTopMenu{padding: 0 20px;}
   #divTopMenu>ul>li>a{font-size: 16px;}
   #divGlobalMenu>ul>li{margin: 0 5px;}
-  #divGlobalMenu>ul>li.myInfo>.userName .name{max-width: 122px; font-size: 13px;}
+  #divGlobalMenu>ul>li.myInfo>.userName .name{max-width: 100px; font-size: 13px;}
   #divGlobalMenu>ul>li.myInfo>a img{width: 18px;}
 }
 @media screen and (max-width:1064px){
   #divTopMenu{display: none;}
-  #divGlobalMenu>ul>li.myInfo>a, #divGlobalMenu>ul>li.myInfo .userName, #divGlobalMenu .login, #divGlobalMenu .lang{display: none;}
+  #divGlobalMenu>ul>li.myInfo>a, #divGlobalMenu>ul>li.myInfo .userName .name, #divGlobalMenu .login, #divGlobalMenu .lang{display: none;}
+  #divGlobalMenu>ul>li.myInfo .userName .userid{display: block;}
   .myInfoW{position: fixed; right: 110px; top: 50px;}
   .myInfoW .myInfoCont{padding: 10px 20px; overflow: overlay; max-height: calc(100vh - 250px);}
 }
@@ -177,9 +183,11 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
 @media screen and (max-width:1800px){
   .wholeMenuBtn{margin-left: 15px;}
 }
-
+@media screen and (max-width:1500px){
+  .wholeMenuBtn{padding: 0 10px;}
+}
 @media screen and (max-width:1200px){
-  .wholeMenuBtn{margin-left: auto;}
+  .wholeMenuBtn{margin-left: 5px;}
 }
 @media screen and (max-width:768px){
   .wholeMenuBtn{padding: 0;}
@@ -218,11 +226,11 @@ body img{image-rendering: auto; image-rendering: -webkit-optimize-contrast;}
   .wholeMenu{height: 100vh; background: #f5f6f8; overflow: hidden;}
   .wholeMenu .wmTop{display: none;}
   .wholeMenu .mobileTop{display: block; background: #0d326f; padding: 12px 15px; box-sizing: border-box; position: relative; z-index: 2;}
-  .wholeMenu .mobileTop>div{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+  .wholeMenu .mobileTop>div{display: -webkit-box; display: -ms-flexbox; display: flex;}
   .wholeMenu .mobileTop .mTop2{padding: 25px 0 10px;}
   .wholeMenu .mobileTop .mobileId{display: inline-block; background: #ffc342 url(../../../image/ko/local/mobile_id.png) no-repeat left 6px top 5px; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap; margin-bottom: 7px; margin-right: 4px;}
   .wholeMenu .mobileTop .nfcId{display: inline-block; background: #fff url(../../../image/ko/local/NFC.png) no-repeat left 6px center; padding: 2px 5px 1px 24px; border-radius: 4px; white-space: nowrap;}
-  .wholeMenu .mobileMenu{display: -webkit-box; display: -ms-flexbox; display: flex; padding-right: 45px; box-sizing: border-box; margin-left: auto;}
+  .wholeMenu .mobileMenu{display: -webkit-box; display: -ms-flexbox; display: flex; padding-right: 45px; box-sizing: border-box; margin-left: auto; flex-shrink: 0;}
   .wholeMenu .mobileMenu>li{margin-left: 20px;}
   .wholeMenu .mobileMenu>li img{height: 20px;}
   .wholeMenu .mobileMenu .lang a{display: inline-block; line-height: 20px; font-family: PretendardM, sans-serif; color: #fff;}
